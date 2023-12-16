@@ -1,8 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  font-family: "EB Garamond", serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.rounded-medium {
+  border-radius: 0.375rem;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #888;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.custom-primary-color {
+  background: #1a9c5b;
+  color: #fff;
+}
+
+.custom-secondary-color {
+  background: #1b85a5;
+  color: #fff;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -25,3 +72,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+ */
